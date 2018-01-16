@@ -1,0 +1,51 @@
+.main {
+  background-color: #383838;
+  min-height: calc(100vh + 100px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center top;
+}
+
+.has-after-border::after {
+  color: #FFFFFF;
+  border-right-color: #fff;
+  bottom: -1px;
+  right: 0;
+  border-right: 100vw solid;
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  border-top: 100px solid transparent;
+  border-bottom: 0 solid transparent;
+  outline: 0;
+}
+
+
+.logo {
+  position: absolute;
+  top: 5rem;
+  height: 6rem;
+}
+
+
+
+h1 {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 4rem;
+  color: #F9F9F9;
+}
+
+h1 strong {
+  color: #00ff9b;
+}
+
+h2 {
+  font-family: roboto;
+  font-weight: 400;
+  color: #FFFFFF
+}

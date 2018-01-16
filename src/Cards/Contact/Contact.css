@@ -1,0 +1,149 @@
+.main6 {
+  background: #383838;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 150px 0 50px;
+}
+
+.main6.has-after-border::after {
+  color: #383838;
+  border-right-color: #2e2e34;
+    top: -100px;
+    bottom: -1px;
+    right: 0;
+    border-right: 100vw solid;
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border-top: 100px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+.main6 h1 {
+  color: #FFFFFF;
+
+}
+
+.main6 h1::after {
+  background: #FFFFFF;
+}
+
+.main6 div.container::before {
+  display: table;
+    content: " ";
+}
+
+form#contact-form.contact-form {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+form#contact-form.contact-form input {
+  width: 100%;
+    display: block;
+    padding: 20px 0;
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid #53555f;
+    font-size: 16px;
+    font-weight: 400;
+    color: #949494;
+    font-style: italic;
+    resize: vertical;
+}
+
+form#contact-form.contact-form textarea {
+  width: 100%;
+     display: block;
+     padding: 20px 0;
+     background: 0 0;
+     border: none;
+     border-bottom: 1px solid #53555f;
+     font-size: 16px;
+     font-weight: 400;
+     color: #949494;
+     font-style: italic;
+     resize: vertical;
+     font-family: inherit;
+     line-height: inherit;
+}
+
+form#contact-form.contact-form button {
+  font-family: Lato;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: block;
+  background: 0 0;
+  border: none;
+  border-bottom: 1px solid #53555f;
+  color: #949494;
+  font-style: italic;
+  resize: vertical;
+  transition: all .4s;
+}
+
+form#contact-form.contact-form button:hover {
+  padding: 15px;
+  color: #383838;
+  background-color: #FFFFFF;
+  transition: all .4s;
+}
+
+form#contact-form.contact-form button::before {
+  content: "";
+    width: 100%;
+    height: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+div.row::before {
+  display: table;
+    content: " ";
+}
+
+.contact-form label {
+  text-align: left;
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    max-width: 100%;
+    font-weight: 600;
+    font-family: Lato;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+div.contact-details strong {
+  font-family: Lato;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: block;
+}
+
+a.personal-email {
+  color: #00ff9b;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: Roboto;
+}
+
+a.phone-number {
+  font-family: Lato;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: block;
+}

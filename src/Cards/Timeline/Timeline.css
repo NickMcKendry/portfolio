@@ -1,0 +1,143 @@
+div.main3 {
+  background-color: #383838;
+  position: relative;
+}
+
+.has-before-border::before {
+  color: #383838;
+  border-left-color: #2e2e34;
+  top: -100px;
+  left: 0;
+  border-left: 100vw solid;
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  border-top: 100px solid transparent;
+  border-bottom: 0 solid transparent;
+
+}
+
+
+
+h1.timeline-section-header {
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+p.subtitle {
+  color: #a3a3a7;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+div.timeline-container {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  position: relative;
+  padding: 50px;
+  overflow: hidden;
+}
+
+div.timeline-container::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  left: calc(50% - 10px);
+  background: #00ff9b;
+}
+
+div.timeline-container::after {
+  content: "";
+    width: 2px;
+    height: 4000px;
+    display: block;
+    position: absolute;
+    top: -5.1rem;
+    left: 50%;
+    left: calc(50% - 1px);
+    background: #00ff9b;
+}
+
+.block {
+  position: relative;
+  width: calc(50% - 30px);
+}
+
+div.block.block-left::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: -35px;
+  background: #00ff9b;
+}
+
+.block h3 {
+  color: #FFFFFF;
+}
+
+.block p {
+  color: #a3a3a7;
+}
+
+.block.block-left {
+  text-align: right !important;
+}
+
+.block.block-right {
+  text-align: left;
+  margin-left: calc(50% + 30px);
+}
+
+div.block.block-right::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: -35px;
+  background: #00ff9b;
+}
+
+div.circle {
+  width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 8px);
+    background: #00ff9b;
+}
+
+h1.timeline-section-header::before {
+  background: #00ff9b;
+  content: "";
+  width: 70px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+
+}
+
+h1.timeline-section-header::after {
+  background: #FFFFFF;
+  content: "";
+  width: 70px;
+  height: 2px;
+  display: block;
+
+}
