@@ -35,7 +35,7 @@ export default class Contact extends Component {
       message: this.state.message
     };
     e.preventDefault();
-    let promiseObj = axios.post('http://localhost:5000/email', contact)
+    let promiseObj = axios.post('https://calm-inlet-55567.herokuapp.com/email', contact)
     promiseObj.then((data) => {
       console.log(data);
       if(data.data.message === "Success") {
