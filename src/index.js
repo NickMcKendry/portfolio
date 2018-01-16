@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Helmet } from 'react-helmet';
+import OGimage from './ogimage.png';
 
 // Components
 import Intro from './Cards/Intro/Intro';
@@ -12,12 +14,15 @@ import Contact from './Cards/Contact/Contact';
 
 ReactDOM.render(
   <div>
-   <Intro />
-   <About />
-   <Timeline />
-   <Skills />
-   <Projects />
-   <Contact />
+    <Helmet>
+      <meta property="og:image" content={OGimage} />
+    </Helmet>
+    <Intro />
+    <About />
+    <Timeline />
+    <Skills />
+    <Projects />
+    <Contact />
   </div>,
   document.getElementById('root')
 );
