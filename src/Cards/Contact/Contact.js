@@ -1,7 +1,51 @@
 import React, { Component } from 'react';
 import './Contact.css';
+import axios from 'axios';
 
 export default class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+      success: ''
+    }
+  }
+
+  setName(e) {
+    this.setState({ name: e.target.value });
+    console.log(this.state.name);
+  }
+
+  setEmail(e) {
+    this.setState({ email: e.target.value });
+    console.log(this.state.email);
+  }
+
+  setMessage(e) {
+    this.setState({ message: e.target.value });
+    console.log(this.state.message);
+  }
+
+  sendEmail(e) {
+    let contact = {
+      email: this.state.email,
+      name: this.state.name,
+      message: this.state.message
+    };
+    e.preventDefault();
+    let promiseObj = axios.post('http://localhost:3000/email', contact)
+    promiseObj.then((data) => {
+      console.log(data);
+      if(data.data.message === "Success") {
+        this.setState({ success: true })
+      } else {
+        this.setState({ success: false })
+      }
+    })
+  }
+
   render() {
     return (
       <div className="main6 has-after-border">
@@ -14,23 +58,23 @@ export default class Contact extends Component {
               <div className="col-sm-6">
                 <label for="username">
                   <span>Name</span>
-                  <input type="text" name="name" id="username" placeholder="Enter your full name" required/>
+                  <input type="text" name="name" id="username" placeholder="Enter your full name" onChange={this.setName.bind(this)} required/>
                 </label>
               </div>
               <div className="col-sm-6">
                 <label for="email">
                   <span>Email</span>
-                  <input type="email" name="email" id="email" placeholder="Enter a valid email address" required/>
+                  <input type="email" name="email" id="email" placeholder="Enter a valid email address" onChange={this.setEmail.bind(this)} required/>
                 </label>
               </div>
               <div className="col-sm-12">
                 <label for="message">
                   <span>Message</span>
-                  <textarea name="message" id="message" placeholder="How can I help you?" required/>
+                  <textarea name="message" id="message" placeholder="How can I help you?" onChange={this.setMessage.bind(this)} required/>
                 </label>
               </div>
               <div className="col-sm-4 col-sm-offset-4 submit-button">
-                  <button type="submit">Send Now</button>
+                  <button type="submit" onClick={this.sendEmail.bind(this)}>Send Now</button>
                   <i className="fa fa-send"></i>
               </div>
             </div>
