@@ -35,11 +35,12 @@ export default class Contact extends Component {
       message: this.state.message
     };
     e.preventDefault();
-    let promiseObj = axios.post('https://calm-inlet-55567.herokuapp.com/email', contact)
+    // https://calm-inlet-55567.herokuapp.com/
+    let promiseObj = axios.post('http://localhost:3000/email', contact)
     promiseObj.then((data) => {
       console.log(data);
       if(data.data.message === "Success") {
-        this.setState({ success: true })
+        this.setState({ success: true, email: '', name: '', message: '' });
       } else {
         this.setState({ success: false })
       }
@@ -76,6 +77,9 @@ export default class Contact extends Component {
               <div className="col-sm-4 col-sm-offset-4 submit-button">
                   <button type="submit" onClick={this.sendEmail.bind(this)}>Send Now</button>
                   <i className="fa fa-send"></i>
+              </div>
+              <div className="col-sm-5">
+                <p className={this.state.success ? 'show' : 'hide'}>Thank you! Ill get back to you soon!</p>
               </div>
             </div>
           </form>

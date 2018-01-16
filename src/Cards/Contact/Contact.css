@@ -147,3 +147,14 @@ a.phone-number {
   color: #FFFFFF;
   display: block;
 }
+
+p.hide {
+  display: none;
+}
+
+p.show {
+  display: block;
+  color: #00ff9b;
+  position: center;
+  margin-top: 1rem;
+}
