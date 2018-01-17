@@ -5,6 +5,7 @@ import RevkitMods from './RevkitMods.png';
 import RevkitBuild from './RevkitBuild.png';
 import AgileOverload from './AgileOverload.png';
 import RevMatch from './RevMatch.png';
+import BTG from './Leaf.svg';
 
 export default class Projects extends Component {
 
@@ -17,7 +18,7 @@ export default class Projects extends Component {
           <div className="project-gallery-section">
             <div className="gallery-container row">
               <div className="mix col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <a href="https://revkit.com">
+                <a href="https://revkit.com" target="_blank">
                   <div className="item">
                     <img src={Revkit} />
                     <div className="info">
@@ -30,7 +31,7 @@ export default class Projects extends Component {
                 </a>
               </div>
               <div className="mix col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <a href="https://mods.revkit.com">
+                <a href="https://mods.revkit.com" target="_blank">
                   <div className="item">
                     <img src={RevkitMods} />
                     <div className="info">
@@ -43,7 +44,7 @@ export default class Projects extends Component {
                 </a>
               </div>
               <div className="mix col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <a href="https://revkit.com/signup/">
+                <a href="https://revkit.com/signup/" target="_blank">
                   <div className="item">
                     <img src={RevkitBuild} />
                     <div className="info">
@@ -56,7 +57,7 @@ export default class Projects extends Component {
                 </a>
               </div>
               <div className="mix col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <a href="https://agile-overload.herokuapp.com/">
+                <a href="https://agile-overload.herokuapp.com/" target="_blank">
                   <div className="item">
                     <img src={AgileOverload} />
                     <div className="info">
@@ -69,13 +70,26 @@ export default class Projects extends Component {
                 </a>
               </div>
               <div className="mix col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <a href="https://www.youtube.com/watch?v=oFETItph-Jo#t=1h55m30s">
+                <a href="https://www.youtube.com/watch?v=oFETItph-Jo#t=1h55m30s" target="_blank">
                   <div className="item">
                     <img src={RevMatch} />
                     <div className="info">
                       <div className="content">
                         <h4>RevMatch</h4>
                         <p>This was my capstone project at Galvanize. Revmatch is a mobile app that is a social media pointed at car enthusiasts. Built with React Native, Node, MongoDB, and Mongoose.</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="mix col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <a href="https://btg-designs.surge.sh" target="_blank">
+                  <div className="item">
+                    <img src={BTG} />
+                    <div className="info">
+                      <div className="content">
+                        <h4>Back To The Garden</h4>
+                        <p>This was a small design project I did for a friend. I made all of the logos by hand using Sketch, he sold these shirts to fundraise a mission trip.</p>
                       </div>
                     </div>
                   </div>

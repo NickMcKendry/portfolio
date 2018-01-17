@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Helmet } from 'react-helmet';
+import MetaTags from 'react-meta-tags';
 import OGimage from './ogimage.png';
 
 // Components
@@ -14,9 +14,9 @@ import Contact from './Cards/Contact/Contact';
 
 ReactDOM.render(
   <div>
-    <Helmet>
+    <MetaTags>
       <meta property="og:image" content={OGimage} />
-    </Helmet>
+    </MetaTags>
     <Intro />
     <About />
     <Timeline />
