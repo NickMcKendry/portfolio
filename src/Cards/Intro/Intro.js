@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Intro.css';
 import Logo from './nm-logo.png';
-import Cover from './cover.png';
+import Cover from './PersonalSiteCover-01.png';
 
 export default class Intro extends Component {
   render() {
