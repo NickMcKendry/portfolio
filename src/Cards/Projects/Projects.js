@@ -5,7 +5,7 @@ import RevkitMods from './RevkitMods.png';
 import RevkitBuild from './RevkitBuild.png';
 import CT from './CT.png';
 import RevMatch from './RevMatch.png';
-import BTG from './Leaf.svg';
+import Jokes from './Jokes.png';
 
 export default class Projects extends Component {
 
@@ -83,13 +83,13 @@ export default class Projects extends Component {
                 </a>
               </div>
               <div className="mix col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <a href="https://btg-designs.surge.sh" target="_blank">
+                <a href="http://peachesjokes.surge.sh/" target="_blank">
                   <div className="item">
-                    <img src={BTG} />
+                    <img src={Jokes} />
                     <div className="info">
                       <div className="content">
-                        <h4>Back To The Garden</h4>
-                        <p>This was a small design project I did for a friend. I made all of the logos by hand using Sketch, he sold these shirts to fundraise a mission trip.</p>
+                        <h4>Peaches Got Jokes</h4>
+                        <p>This was a small fun project I made to give my classmates a good laugh. Every morning during standup we would tell a bad dad joke so I created a dad joke generator. Built using React, Redux, Babel, and Axios.</p>
                       </div>
                     </div>
                   </div>
